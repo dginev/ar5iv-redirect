@@ -1,0 +1,20 @@
+[package]
+name = "ar5iv-redirect"
+version = "0.1.0"
+edition = "2021"
+default-run = "ar5iv-redirect"
+
+[dependencies]
+lazy_static = "1.4.0"
+regex = "1.5.4"
+zip = "0.5"
+rand = "0.8.4"
+unicode-segmentation = "1.8.0"
+
+[[bin]]
+path = "src/main.rs"
+name = "ar5iv-redirect"
+
+[dependencies.rocket]
+git="https://github.com/SergioBenitez/Rocket"
+version="0.5.0-rc.1"
